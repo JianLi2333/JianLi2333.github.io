@@ -1,0 +1,129 @@
+@font-face{
+    font-family:'MaShanZheng' ;  /* 字体名自定义即可 */
+    src:url('/fonts/MaShanZheng-Regular.ttf'); /* 字体文件路径 */
+    font-display : swap;
+  }
+
+  h1#site-title {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  span {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+  
+  span.site-name {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  h2 {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+  .flink-desc {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .el-input-group__prepend {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .tk-footer {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .card-widget.card-info {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .author-info__name {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  a.title {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  time {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  p {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  img.cover {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .reward-button {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  div#footer-wrap {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .recent-post-item {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .announcement_content {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  a {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .item-name {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  img {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  div#workboard {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  h1 {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  a.post-meta__tags {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .article-sort-title {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  a.article-sort-item-title {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .search-dialog {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  svg.ais-PoweredBy-logo {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .author-info__description {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  form {
+    font-family: 'MaShanZheng', sans-serif;
+  }
+  .tk-expand{
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  .post-copyright-m-info{
+    font-family: 'MaShanZheng', sans-serif;
+  }
+
+  

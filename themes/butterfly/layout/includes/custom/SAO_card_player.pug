@@ -1,0 +1,67 @@
+if theme.aside.card_author.enable
+  .card-widget.card-info
+    .cols
+      .col
+        .container
+          .front.avatarPanel
+            .inner
+              .player-title= '满世界的香菜'
+              .player-avatar
+                img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
+          .back.attributesPanel
+            .inner
+              - var playerLV = Math.ceil(Number( site.posts.length) / 10)
+              .player-lv= 'LV.' +playerLV
+              .player-name= config.author
+              .attributes-value
+                if site.posts.length
+                  .attributes-value-item
+                    a(href=url_for(config.archive_dir) + '/')
+                      .attributes= _p('aside.articles')
+                      .value-bar
+                        - var fillMAX = Math.ceil(Number( site.posts.length) / 100) * 100
+                        - var fillNow = Number(site.posts.length)
+                        - var valueFill = ( fillNow / fillMAX * 100 ).toFixed(2) + '%'
+                        .value-bar-fill(style=`width:`+ valueFill)
+                          .value-bar-fill-in(style='background: rgba(89, 230, 54,0.6)')
+                      span= fillNow +'/'+ fillMAX
+
+                if site.tags.length
+                  .attributes-value-item
+                    a(href=url_for(config.tag_dir) + '/')
+                      .attributes= _p('aside.tags')
+                      .value-bar
+                        - var fillMAX = Math.ceil(Number( site.tags.length) / 100) * 100
+                        - var fillNow = Number(site.tags.length)
+                        - var valueFill = ( fillNow / fillMAX * 100 ).toFixed(2) + '%'
+                        .value-bar-fill(style=`width:`+ valueFill)
+                          .value-bar-fill-in(style='background: rgba(224, 20, 20, 0.6)')
+                      span= fillNow +'/'+ fillMAX
+
+                if site.categories.length
+                  .attributes-value-item
+                    a(href=url_for(config.category_dir) + '/')
+                      .attributes= _p('aside.categories')
+                      .value-bar
+                        - var fillMAX = Math.ceil(Number( site.categories.length) / 100) * 100
+                        - var fillNow = Number(site.categories.length)
+                        - var valueFill = ( fillNow / fillMAX * 100 ).toFixed(2) + '%'
+                        .value-bar-fill(style=`width:`+ valueFill)
+                          .value-bar-fill-in(style='background: rgba(30, 97, 226, 0.6)')
+                      span= fillNow +'/'+ fillMAX
+      .col
+        .container
+          .front.descriptionPanel
+            .inner
+              .player_description!= theme.aside.card_author.description || config.description
+              .play-bottom
+          .back.buttonPanel
+            .inner
+              if theme.aside.card_author.button.enable
+                a#card-info-btn.button--animated(href=theme.aside.card_author.button.link)
+                  i(class=theme.aside.card_author.button.icon)
+                  span=theme.aside.card_author.button.text
+              if(theme.social)
+                  .card-info-social-icons.is-center
+                    !=fragment_cache('social', function(){return partial('includes/header/social')})
+              .play-bottom

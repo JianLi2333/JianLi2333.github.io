@@ -1,0 +1,21 @@
+.GalMenu.GalDropDown
+  #gal.circle
+    .ring
+      a.menuItem(href=url_for(theme.GalMenu.MenuItem.link1))
+        span=theme.GalMenu.MenuItem.item1
+      a.menuItem(href=url_for(theme.GalMenu.MenuItem.link2))
+        span=theme.GalMenu.MenuItem.item2
+      a.menuItem(href=url_for(theme.GalMenu.MenuItem.link3))
+        span=theme.GalMenu.MenuItem.item3
+      a.menuItem(href=url_for(theme.GalMenu.MenuItem.link4))
+        span=theme.GalMenu.MenuItem.item4
+      a.menuItem(href=url_for(theme.GalMenu.MenuItem.link5))
+        span=theme.GalMenu.MenuItem.item5
+      a.menuItem(href=url_for(theme.GalMenu.MenuItem.link6))
+        span=theme.GalMenu.MenuItem.item6
+  if theme.GalMenu.audio
+    if theme.GalMenu.music
+      audio#audio(src=url_for(theme.GalMenu.music))
+    else
+      audio#audio(src='https://cdn.jsdelivr.net/gh/Akilarlxh/Akilarlxh.github.io@bf_3.3.0_12/music/galmenu.mp3')
+script(defer src='https://cdn.jsdelivr.net/gh/Akilarlxh/Akilarlxh.github.io@bf_3.3.0_12/js/custom/galmenu.min.js')
